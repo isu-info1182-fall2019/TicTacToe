@@ -5,8 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TicTacToe"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="664.5">
     <Grid>
-        
+        <Grid x:Name="grdBoard" HorizontalAlignment="Left" Height="399" Width="422" Margin="10,10,0,0" VerticalAlignment="Top" >
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Content="" x:Name="btn_0_0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="141" Height="133" Grid.Column="0" Grid.Row="0" />
+            <Button Content="" x:Name="btn_0_1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="141" Height="133" Grid.Column="1" Grid.Row="0" />
+            <Button Content="" x:Name="btn_0_2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="141" Height="133" Grid.Column="2" Grid.Row="0" />
+            <Button Content="" x:Name="btn_1_0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="141" Height="133" Grid.Column="0" Grid.Row="1" />
+            <Button Content="" x:Name="btn_1_1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="141" Height="133" Grid.Column="1" Grid.Row="1" />
+            <Button Content="" x:Name="btn_1_2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="141" Height="133" Grid.Column="2" Grid.Row="1" />
+            <Button Content="" x:Name="btn_2_0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="141" Height="133" Grid.Column="0" Grid.Row="2" />
+            <Button Content="" x:Name="btn_2_1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="141" Height="133" Grid.Column="1" Grid.Row="2" />
+            <Button Content="" x:Name="btn_2_2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="141" Height="133" Grid.Column="2" Grid.Row="2" />
+        </Grid>
+        <Border BorderBrush="Red"  HorizontalAlignment="Left" Height="109" Margin="503,58,0,0" VerticalAlignment="Top" Width="110">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="tb_0_0" Grid.Row="0" Grid.Column="0" Text="*" />
+                <TextBlock x:Name="tb_0_1" Grid.Row="0" Grid.Column="1" Text="*"/>
+                <TextBlock x:Name="tb_0_2" Grid.Row="0" Grid.Column="2" Text="*"/>
+                <TextBlock x:Name="tb_1_0" Grid.Row="1" Grid.Column="0" Text="*"/>
+                <TextBlock x:Name="tb_1_1" Grid.Row="1" Grid.Column="1" Text="*"/>
+                <TextBlock x:Name="tb_1_2" Grid.Row="1" Grid.Column="2" Text="*"/>
+                <TextBlock x:Name="tb_2_0" Grid.Row="2" Grid.Column="0" Text="*"/>
+                <TextBlock x:Name="tb_2_1" Grid.Row="2" Grid.Column="1" Text="*"/>
+                <TextBlock x:Name="tb_2_2" Grid.Row="2" Grid.Column="2" Text="*"/>
+            </Grid>
+        </Border>
     </Grid>
 </Window>
